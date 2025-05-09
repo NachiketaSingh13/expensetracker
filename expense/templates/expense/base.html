@@ -1,0 +1,27 @@
+{% load static%}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'expense/styles.css'  %}">
+        <link rel="stylesheet" href="{% static 'expense/style.css'  %}">
+    </head>
+    <body>
+        <nav class="shadow-lg p-5">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="#" class="flex">
+                    <img class="h-10 mr-3" src="{% static 'expense/images/wallet.png' %}" alt="">
+                    <span class="self-center text-xl font-semibold">Expense Tracker</span>
+                </a>
+            </div>
+        </nav>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
